@@ -1,5 +1,6 @@
 package com.example.news_data
 
+import com.example.news_data.RequestResult.Error
 import com.example.news_data.RequestResult.InProgress
 import com.example.news_data.RequestResult.Success
 
