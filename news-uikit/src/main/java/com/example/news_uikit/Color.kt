@@ -1,4 +1,4 @@
-@file:Suppress("MagicNumber")
+@file:Suppress("MagicNumber", "PackageName")
 
 package com.example.news_uikit
 

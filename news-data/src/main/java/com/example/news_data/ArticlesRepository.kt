@@ -1,3 +1,5 @@
+@file:Suppress("PackageName")
+
 package com.example.news_data
 
 import com.example.database.NewsDatabase

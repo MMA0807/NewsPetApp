@@ -63,7 +63,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
 
     implementation(project(":news-data"))
-    implementation(project(":newsUikit"))
+    implementation(project(":news-uikit"))
 
     implementation(libs.dagger.hilt.android)
     kapt(libs.dagger.hilt.compiler)

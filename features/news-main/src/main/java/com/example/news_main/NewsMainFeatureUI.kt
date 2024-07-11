@@ -1,3 +1,5 @@
+@file:Suppress("PackageName")
+
 package com.example.news_main
 
 import androidx.compose.foundation.background
@@ -84,13 +86,6 @@ internal fun ProgressIndicator() {
         contentAlignment = Alignment.Center
     ) {
         CircularProgressIndicator()
-    }
-}
-
-@Composable
-internal fun NewsEmpty() {
-    Box(contentAlignment = Alignment.Center) {
-        Text(text = "No NEWS")
     }
 }
 

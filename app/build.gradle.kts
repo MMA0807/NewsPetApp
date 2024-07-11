@@ -73,7 +73,7 @@ dependencies {
     implementation(project(":features:news-main"))
     implementation(project(":database"))
     implementation(project(":news-common"))
-    implementation(project(":newsUikit"))
+    implementation(project(":news-uikit"))
 
     debugImplementation(libs.okhttp.logging.interceptor)
 }

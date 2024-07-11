@@ -1,3 +1,5 @@
+@file:Suppress("PackageName")
+
 package com.example.news_uikit
 
 import android.os.Build

@@ -1,3 +1,5 @@
+@file:Suppress("PackageName")
+
 package com.example.news_common
 
 import android.util.Log

@@ -1,3 +1,5 @@
+@file:Suppress("PackageName")
+
 package com.example.news_data
 
 sealed class RequestResult<out E : Any>(
