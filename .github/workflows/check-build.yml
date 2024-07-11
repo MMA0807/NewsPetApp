@@ -19,8 +19,9 @@ jobs:
                   cache-disabled: true
 
             - name: Detekt
-              shell: bash
-              run: ./gradlew detekt
+              # shell: bash
+              # run: ./gradlew detekt
+              uses: natiginfo/action-detekt-all@1.23.6
 
             - name: Publish Checkstyle Report
                 # You may pin to the exact commit or the version.
