@@ -2,6 +2,7 @@ plugins {
     id("java-library")
     alias(libs.plugins.jetbrains.kotlin.jvm)
     alias(libs.plugins.kotlinSerialization)
+    alias(libs.plugins.kapt)
 }
 
 java {
@@ -12,8 +13,10 @@ java {
 dependencies {
     implementation(libs.retrofit)
     implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.serialization.json)
+    api(libs.kotlinx.serialization.json)
     implementation(libs.androidx.annotation)
     implementation(libs.retrofit2.kotlinx.serialization.converter)
     implementation(libs.retrofit.adapters.result)
+    api(libs.okhttp)
+    kapt(libs.retrofit.responseTypeKeeper)
 }
