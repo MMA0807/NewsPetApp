@@ -21,7 +21,7 @@ object AppModule {
     fun provideNewsApi(): NewsApi =
         NewsApi(
             baseUrl = BuildConfig.NEWS_API_BASE_URL,
-            apikey = BuildConfig.NEWS_API_KEY
+            apikey = BuildConfig.NEWS_API_KEY,
         )
 
     @Provides
