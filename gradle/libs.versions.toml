@@ -15,8 +15,6 @@ androidx-lifecycle = "2.8.3"
 activityCompose = "1.9.0"
 composePlugin = "1.6.11"
 composeBom = "2024.06.00"
-orgJetbrainsComposeGradlePlugin = "1.6.11"
-orgJetbrainsComposeGradlePluginVersion = "1.6.20-dev1663"
 retrofit = "2.11.0"
 retrofit2KotlinxSerializationConverter = "1.0.0"
 retrofitAdaptersResult = "1.0.10"
@@ -56,11 +54,10 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
-org-jetbrains-compose-gradle-plugin = { module = "org.jetbrains.compose:org.jetbrains.compose.gradle.plugin", version.ref = "orgJetbrainsComposeGradlePlugin" }
-org-jetbrains-compose-gradle-plugin-v1620dev1663 = { module = "org.jetbrains.compose:org.jetbrains.compose.gradle.plugin", version.ref = "orgJetbrainsComposeGradlePluginVersion" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-adapters-result = { module = "com.github.skydoves:retrofit-adapters-result", version.ref = "retrofitAdaptersResult" }
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
+retrofit-responseTypeKeeper = { module = "com.squareup.retrofit2:response-type-keeper", version.ref = "retrofit" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
@@ -83,6 +80,7 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
 kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+androidx-room = { id = "androidx.room", version.ref = "room" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "composePlugin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
