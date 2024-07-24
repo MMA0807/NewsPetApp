@@ -6,12 +6,12 @@ import com.example.newsapi.models.Language
 import com.example.newsapi.models.ResponseDTO
 import com.example.newsapi.models.SortBy
 import com.example.newsapi.utils.NewsApiKeyInterceptor
-import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.skydoves.retrofit.adapters.result.ResultCallAdapterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import retrofit2.create
 import retrofit2.http.GET
 import retrofit2.http.Query

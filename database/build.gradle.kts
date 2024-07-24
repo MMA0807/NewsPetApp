@@ -1,16 +1,16 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.ksp)
     alias(libs.plugins.androidx.room)
 }
 
 android {
     namespace = "com.example.database"
-    compileSdk = 34
+    compileSdk = libs.versions.androidSdk.compile.get().toInt()
 
     defaultConfig {
-        minSdk = 33
+        minSdk = libs.versions.androidSdk.min.get().toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

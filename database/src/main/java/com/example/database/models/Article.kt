@@ -8,15 +8,15 @@ import java.util.Date
 
 @Entity(tableName = "articles")
 data class ArticleDBO(
-    @Embedded(prefix = "source-") val source: Source,
-    @ColumnInfo("author") val author: String? = null,
-    @ColumnInfo("title") val title: String? = null,
-    @ColumnInfo("description") val description: String? = null,
-    @ColumnInfo("url") val url: String? = null,
-    @ColumnInfo("urlToImage") val urlToImage: String? = null,
-    @ColumnInfo("publishedAt") val publishedAt: Date,
-    @ColumnInfo("content") val content: String? = null,
-    @PrimaryKey(autoGenerate = true) val id: Long
+    @Embedded(prefix = "source") val source: Source?,
+    @ColumnInfo("author") val author: String?,
+    @ColumnInfo("title") val title: String?,
+    @ColumnInfo("description") val description: String?,
+    @ColumnInfo("url") val url: String?,
+    @ColumnInfo("urlToImage") val urlToImage: String?,
+    @ColumnInfo("publishedAt") val publishedAt: Date?,
+    @ColumnInfo("content") val content: String?,
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
 )
 
 data class Source(

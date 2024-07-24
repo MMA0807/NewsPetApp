@@ -1,16 +1,15 @@
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.compose.compiler)
 }
 
 android {
-    namespace = "com.example.news_uikit"
-    compileSdk = 34
+    namespace = "com.example.news.uikit"
+    compileSdk = libs.versions.androidSdk.compile.get().toInt()
 
     defaultConfig {
-        minSdk = 24
+        minSdk = libs.versions.androidSdk.min.get().toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -38,10 +37,11 @@ android {
 dependencies {
 
     implementation(platform(libs.androidx.compose.bom))
-    api(libs.androidx.ui)
-    api(libs.androidx.ui.graphics)
-    api(libs.androidx.ui.tooling.preview)
+    api(libs.androidx.compose.ui)
+    api(libs.androidx.compose.ui.graphics)
+    api(libs.androidx.compose.ui.tooling.preview)
+    api(libs.androidx.compose.runtime)
     api(libs.androidx.material3)
-    debugApi(libs.androidx.ui.tooling)
-    debugApi(libs.androidx.ui.test.manifest)
+    debugApi(libs.androidx.compose.ui.tooling)
+    debugApi(libs.androidx.compose.ui.test.manifest)
 }

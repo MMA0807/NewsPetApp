@@ -1,10 +1,10 @@
 package com.example.newsapp
 
 import android.content.Context
+import com.example.common.AppDispatchers
+import com.example.common.Logger
+import com.example.common.androidLogcatLogger
 import com.example.database.NewsDatabase
-import com.example.news_common.AndroidLogcatLogger
-import com.example.news_common.AppDispatchers
-import com.example.news_common.Logger
 import com.example.newsapi.NewsApi
 import dagger.Module
 import dagger.Provides
@@ -35,5 +35,5 @@ object AppModule {
     fun provideAppCoroutineDispatchers(): AppDispatchers = AppDispatchers()
 
     @Provides
-    fun provideLogger(): Logger = AndroidLogcatLogger()
+    fun provideLogger(): Logger = androidLogcatLogger()
 }
